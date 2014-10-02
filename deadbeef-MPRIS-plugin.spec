@@ -11,6 +11,7 @@ License:        GPLv3
 URL:            http://kernelhcy.github.io/DeaDBeeF-MPRIS-plugin/
 Source0:        https://github.com/ihacklog/DeaDBeeF-MPRIS-plugin/tarball/%{gitcommit_full}
 
+BuildRequires:  autoconf
 BuildRequires:  deadbeef-devel
 Requires:       deadbeef
 
