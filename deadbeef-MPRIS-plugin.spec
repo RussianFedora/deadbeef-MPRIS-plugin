@@ -14,6 +14,8 @@ Source0:        https://github.com/ihacklog/DeaDBeeF-MPRIS-plugin/tarball/%{gitc
 BuildRequires:  autoconf
 BuildRequires:  automake
 BuildRequires:  deadbeef-devel
+BuildRequires:  glib2-devel
+BuildRequires:  libtool
 Requires:       deadbeef
 
 
@@ -25,7 +27,7 @@ The MPRIS plugin for DeaDBeeF music player.
 
 
 %build
-autoreconf
+autoreconf --install
 %configure
 make %{?_smp_mflags}
 
